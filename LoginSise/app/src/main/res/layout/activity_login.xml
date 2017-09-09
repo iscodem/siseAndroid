@@ -73,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/btnLogin"
                 android:theme="@style/botonLogin"
+                android:onClick="ingresar"
                 />
 
         </LinearLayout>
