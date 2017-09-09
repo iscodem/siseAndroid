@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SaludosMensajeria</string>
+    <string name="txtTitulo">Ejemplo Mensajerias</string>
+    <string name="ingreseNombre">IngreseNombre</string>
+    <string name="txtToast">Botones Toast</string>
+    <string name="btnSaludarToast">Saludar Toast</string>
+    <string name="txtSnackbar">Botones SnackBar</string>
+    <string name="btnSaludarSnackbar">Snackbar Default</string>
+    <string name="btnSnackBarDefault">Snackbar default</string>
+    <string name="btnSnackBarAction">snackbar action</string>
+    <string name="btnSnackBarCustom">snackbar custom</string>
+</resources>

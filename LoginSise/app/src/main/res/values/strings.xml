@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginSise</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="editUsuario">usuario</string>
+    <string name="editPassword">password</string>
+    <string name="btnLogin">Ingresar</string>
+</resources>

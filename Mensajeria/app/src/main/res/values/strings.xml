@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mensajeria</string>
+    <string name="miTitulo">Ejemplo basico de Widget</string>
+    <string name="btnMensajeToastTexto">Saludar Toast</string>
+    <string name="btnSaludarSnackbar">Saludar SnackBar</string>
+    <string name="txtTituloSpinner">Seleccione una pelicula:</string>
+
+    <string name="otroMensaje">Bienvenido a otro mensaje</string>
+
+    <string name="btnEnviar">Enviar</string>
+
+    <array name="arrayPeliculas">
+        <item>Emoji</item>
+        <item>Capitan America</item>
+        <item>Los Pitufos 3</item>
+        <item>Thor 5</item>
+    </array>
+
+
+</resources>

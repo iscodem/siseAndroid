@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/miTitulo"
+        android:textSize="@dimen/altoTitulo"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <EditText
+        android:id="@+id/editNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"
+        />
+
+    <Button
+        android:id="@+id/btnMensajeToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnMensajeToastTexto"
+        android:onClick="mensajeToast"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+
+        <Button
+            android:id="@+id/btnSaludarSnackbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSaludarSnackbar"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:onClick="mensajeSnackBar"
+            />
+    </LinearLayout>
+
+
+    <!-- para el spinner-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTituloSpinner"/>
+        <Spinner
+            android:id="@+id/spnPeliculas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/arrayPeliculas"
+            >
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEnviar"
+        android:onClick="enviar">
+
+    </Button>
+
+
+</LinearLayout>
