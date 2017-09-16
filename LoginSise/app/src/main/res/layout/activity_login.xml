@@ -76,6 +76,34 @@
                 android:onClick="ingresar"
                 />
 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtNuevoUsuario"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:id="@+id/txtCrearNuevoUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCrearNuevoUsuario"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+
+
+
         </LinearLayout>
 
     </LinearLayout>

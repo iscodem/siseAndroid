@@ -4,4 +4,6 @@
     <string name="editUsuario">usuario</string>
     <string name="editPassword">password</string>
     <string name="btnLogin">Ingresar</string>
+    <string name="txtNuevoUsuario">Nuevo por aquí? ...</string>
+    <string name="txtCrearNuevoUsuario">Registrese aquí.</string>
 </resources>
