@@ -10,4 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pe.edu.sise.loginsise.CrearUsuarioActivity">
 
+    <TextView
+        android:id="@+id/txtTituloCrearUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        />
+
 </RelativeLayout>

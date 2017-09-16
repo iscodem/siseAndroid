@@ -46,33 +46,50 @@ public class LoginActivity extends AppCompatActivity {
         String password = editPassword.getText().toString();
 
         Log.d(TAG, ">>>USUARIO: "+usuario);
-        if(usuario.equals("")||password.equals("")){
-            Toast.makeText(this, "Los datos no pueden ser vacios.", Toast.LENGTH_SHORT).show();
+
+        if(this.validarUsuario(usuario, password)){
+            Intent intent = new Intent(this,MainActivity.class);
+
+            intent.putExtra("usuario",usuario);
+            intent.putExtra("password",password);
+
+            startActivity(intent);
         }else{
-
-            if(this.validarUsuario(usuario)){
-                Intent intent = new Intent(this,MainActivity.class);
-
-                intent.putExtra("usuario",usuario);
-                intent.putExtra("password",password);
-
-                startActivity(intent);
-            }else{
-                Toast.makeText(this, "El usuario no existe.", Toast.LENGTH_SHORT).show();
-            };
-
-        }
+           Toast.makeText(this, "El usuario no existe.", Toast.LENGTH_SHORT).show();
+        };
 
     }
 
-    private boolean validarUsuario(String usuario) {
+    private boolean validarUsuario(String user, String password) {
         Log.d(TAG, ">>>estoy en validarUsuario");
 
         boolean rpta=false;
+        String tipoError="";
+        String mensaje="";
 
-        if(usuario.equals(usuarioBean.getUser())){
+        Log.d(TAG, ">>>USUARIO: "+user);
+
+        if("".equals(user)){
+            tipoError="1";
+            mensaje="Debe ingresar un usuario";
+        }else if("".equals(password)){
+            tipoError="2";
+            mensaje="Debe ingresar password.";
+        }else if(user.equals(usuarioBean.getUser())){
             rpta=true;
         }
+
+        Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
         return rpta;
+    }
+
+
+    public void crearUsuario(View v){
+        //Toast.makeText(this, "Nuevo usuario", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this,CrearUsuarioActivity.class);
+
+        intent.putExtra("titulo","Crear usuario");
+
+        startActivity(intent);
     }
 }

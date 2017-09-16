@@ -97,6 +97,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtCrearNuevoUsuario"
                     android:textColor="@color/colorWhite"
+                    android:onClick="crearUsuario"
+                    android:textStyle="bold"
                     />
 
             </LinearLayout>
