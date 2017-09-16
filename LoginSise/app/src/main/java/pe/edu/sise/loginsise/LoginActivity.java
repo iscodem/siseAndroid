@@ -24,6 +24,12 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
+        this.cargarUsuario();
+    }
+
+    private void cargarUsuario() {
+        //Setear usuarios a un array de UsuarioBean
+
     }
 
     public void ingresar(View v){
