@@ -12,6 +12,10 @@ public class UsuarioBean {
     private String user;
     private String password;
 
+    public UsuarioBean() {
+
+    }
+
     public UsuarioBean(String nombres, String apellidos, int edad, String user, String password) {
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -19,7 +23,6 @@ public class UsuarioBean {
         this.user = user;
         this.password = password;
     }
-
     public String getNombres() {
         return nombres;
     }
